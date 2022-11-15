@@ -1,0 +1,50 @@
+﻿<Window x:Class="Nachweis_Formularlayouttechnik.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nachweis_Formularlayouttechnik"
+        mc:Ignorable="d"
+        Title="M120 Pruefung 2022" Height="300" Width="500" WindowStyle="SingleBorderWindow" Visibility="Visible">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="375*"/>
+            <ColumnDefinition Width="125*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="280*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Viel Glück" Grid.Row="0" FontSize="12"/>
+        <Rectangle Fill="Lavender" Grid.Column="1" Grid.Row="1"/>
+        <GridSplitter Grid.Column="0" Grid.Row="1" Width="5" Margin="5,0,0,0"/>
+
+        
+
+        <!--Untere Buttons-->
+        <WrapPanel Grid.Row="1">
+            <Button Content="Button A" Margin="5" />
+            <Button Content="Button B" Margin="5" />
+            <Button Content="Button C" Margin="5" />
+            <Button Content="Button D" Margin="5" />
+            <Button Content="Button E" Margin="5" />
+            <Button Content="Button F" Margin="5" />
+        </WrapPanel>
+
+        
+        <!--<Button Grid.Row="1" Margin="10" Content="2" Height="20"></Button>--> 
+                    
+
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>
